@@ -120,6 +120,6 @@ app.put("/api/editStatus/:id/:status_val", async (req, res) => {
     console.log(err);
   }
 });
-app.listen("5000", () => {
+app.listen(process.env.PORT, () => {
   console.log("Server running on port..");
 });
